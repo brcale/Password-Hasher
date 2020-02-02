@@ -1,4 +1,4 @@
-# Csharp-password hasher
+# C#-password hasher
 Program that hashes strings and stores them in a database (in this case, a simple notepad file).
 
 This program uses SHA256 hash algorithm and doesn't use salt or pepper.
