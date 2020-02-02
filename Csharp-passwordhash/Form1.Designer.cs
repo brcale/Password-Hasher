@@ -63,6 +63,7 @@
             this.enteredPasswordTB.Name = "enteredPasswordTB";
             this.enteredPasswordTB.Size = new System.Drawing.Size(193, 20);
             this.enteredPasswordTB.TabIndex = 1;
+            this.enteredPasswordTB.UseSystemPasswordChar = true;
             // 
             // button1
             // 
@@ -97,6 +98,7 @@
             this.hashedMessage2.Size = new System.Drawing.Size(58, 22);
             this.hashedMessage2.TabIndex = 4;
             this.hashedMessage2.Text = "label2";
+            this.hashedMessage2.Visible = false;
             this.hashedMessage2.Click += new System.EventHandler(this.hashedMessage2_Click);
             // 
             // numberOfTimes
@@ -109,6 +111,7 @@
             this.numberOfTimes.Size = new System.Drawing.Size(51, 20);
             this.numberOfTimes.TabIndex = 5;
             this.numberOfTimes.Text = "label2";
+            this.numberOfTimes.Visible = false;
             // 
             // label2
             // 
@@ -127,6 +130,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(193, 20);
             this.textBox1.TabIndex = 7;
+            this.textBox1.UseSystemPasswordChar = true;
             // 
             // button2
             // 
