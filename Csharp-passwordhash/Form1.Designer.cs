@@ -235,7 +235,7 @@
             this.Controls.Add(this.enteredPasswordTB);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Password Hasher";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -121,7 +121,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Database";
             this.ResumeLayout(false);
             this.PerformLayout();
 
