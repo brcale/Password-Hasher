@@ -14,6 +14,7 @@ namespace Csharp_passwordhash
 {
     public partial class Form1 : Form
     {
+        //hashing algorithm function
         static string shaHash256(string unHashedString)
         {
             var crypt = new System.Security.Cryptography.SHA256Managed();
@@ -34,7 +35,7 @@ namespace Csharp_passwordhash
         {
 
         }
-
+        //checkbox1 function that enables/disables visibility of the text
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             enteredPasswordTB.UseSystemPasswordChar = !enteredPasswordTB.UseSystemPasswordChar;
@@ -44,12 +45,13 @@ namespace Csharp_passwordhash
         {
 
         }
-
+        //checkbox2 function that enables/disables visibilty of the text
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
             textBox1.UseSystemPasswordChar = !textBox1.UseSystemPasswordChar;
         }
         short numberOfEnteredPasswords = 0;
+        //button for entering passwords
         private void button1_Click(object sender, EventArgs e)
         {
             numberOfEnteredPasswords++;
@@ -72,6 +74,7 @@ namespace Csharp_passwordhash
                 hashedPassword = string.Empty;
             }
         }
+        //button for checking passwords
         private void button2_Click(object sender, EventArgs e)
         {
             passwordExistsLabel.Visible = false;
@@ -82,6 +85,7 @@ namespace Csharp_passwordhash
             short doesPassExistFlag = 0;
             string line;
             System.IO.StreamReader file = new System.IO.StreamReader(filepath);
+            //while loop that goes through the document and checks hashed passwords
             while ((line = file.ReadLine()) != null)
             {
                 string tempDoesPassExist = string.Compare(line, passwordForChecking, false) == 0 ? "yes" : "no";
