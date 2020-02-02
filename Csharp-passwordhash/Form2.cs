@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -21,7 +22,8 @@ namespace Csharp_passwordhash
         {
 
         }
-
+        string user = "admin";
+        string pass = "admin";
         private void button1_Click(object sender, EventArgs e)
         {
             if (textBox1.Text == user && textBox2.Text == pass)

@@ -37,7 +37,7 @@ namespace Csharp_passwordhash
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-
+            enteredPasswordTB.UseSystemPasswordChar = !enteredPasswordTB.UseSystemPasswordChar;
         }
 
         private void hashedMessage2_Click(object sender, EventArgs e)
