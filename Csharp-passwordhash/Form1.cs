@@ -72,5 +72,26 @@ namespace Csharp_passwordhash
                 hashedPassword = string.Empty;
             }
         }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            passwordExistsLabel.Visible = false;
+            passwordDoesntExistLabel.Visible = false;
+            string filepath=@"C:\Users\Bruno\Desktop\passwordStorage\password.txt";
+            string passwordForChecking = textBox1.Text;
+            passwordForChecking = shaHash256(passwordForChecking);
+            short doesPassExistFlag = 0;
+            string line;
+            System.IO.StreamReader file = new System.IO.StreamReader(filepath);
+            while ((line = file.ReadLine()) != null)
+            {
+                string tempDoesPassExist = string.Compare(line, passwordForChecking, false) == 0 ? "yes" : "no";
+                if (tempDoesPassExist == "yes")
+                    doesPassExistFlag = 1;
+            }
+            if (doesPassExistFlag == 1)
+                passwordExistsLabel.Visible = true;
+            else
+                passwordDoesntExistLabel.Visible = true;
+        }
     }
 }
