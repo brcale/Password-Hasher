@@ -41,6 +41,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.passwordDoesntExistLabel = new System.Windows.Forms.Label();
+            this.passwordExistsLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -70,6 +71,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Hash/Insert to base";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // checkBox1
             // 
@@ -167,6 +169,7 @@
             this.checkBox2.TabIndex = 13;
             this.checkBox2.Text = "Show password?";
             this.checkBox2.UseVisualStyleBackColor = false;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // passwordDoesntExistLabel
             // 
@@ -180,12 +183,25 @@
             this.passwordDoesntExistLabel.Text = "Password doesn\'t exist!";
             this.passwordDoesntExistLabel.Visible = false;
             // 
+            // passwordExistsLabel
+            // 
+            this.passwordExistsLabel.AutoSize = true;
+            this.passwordExistsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.passwordExistsLabel.ForeColor = System.Drawing.Color.Lime;
+            this.passwordExistsLabel.Location = new System.Drawing.Point(259, 488);
+            this.passwordExistsLabel.Name = "passwordExistsLabel";
+            this.passwordExistsLabel.Size = new System.Drawing.Size(145, 22);
+            this.passwordExistsLabel.TabIndex = 17;
+            this.passwordExistsLabel.Text = "Password exists!";
+            this.passwordExistsLabel.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(721, 551);
+            this.Controls.Add(this.passwordExistsLabel);
             this.Controls.Add(this.passwordDoesntExistLabel);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.label5);
@@ -221,6 +237,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.Label passwordDoesntExistLabel;
+        private System.Windows.Forms.Label passwordExistsLabel;
     }
 }
 
