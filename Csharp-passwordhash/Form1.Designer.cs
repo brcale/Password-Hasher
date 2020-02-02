@@ -42,6 +42,7 @@
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.passwordDoesntExistLabel = new System.Windows.Forms.Label();
             this.passwordExistsLabel = new System.Windows.Forms.Label();
+            this.databaseButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -196,12 +197,25 @@
             this.passwordExistsLabel.Text = "Password exists!";
             this.passwordExistsLabel.Visible = false;
             // 
+            // databaseButton
+            // 
+            this.databaseButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.databaseButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.databaseButton.Location = new System.Drawing.Point(694, 524);
+            this.databaseButton.Name = "databaseButton";
+            this.databaseButton.Size = new System.Drawing.Size(15, 15);
+            this.databaseButton.TabIndex = 18;
+            this.databaseButton.Text = "button4";
+            this.databaseButton.UseVisualStyleBackColor = false;
+            this.databaseButton.Click += new System.EventHandler(this.databaseButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(721, 551);
+            this.Controls.Add(this.databaseButton);
             this.Controls.Add(this.passwordExistsLabel);
             this.Controls.Add(this.passwordDoesntExistLabel);
             this.Controls.Add(this.checkBox2);
@@ -239,6 +253,7 @@
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.Label passwordDoesntExistLabel;
         private System.Windows.Forms.Label passwordExistsLabel;
+        private System.Windows.Forms.Button databaseButton;
     }
 }
 

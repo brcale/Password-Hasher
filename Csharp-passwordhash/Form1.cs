@@ -93,5 +93,11 @@ namespace Csharp_passwordhash
             else
                 passwordDoesntExistLabel.Visible = true;
         }
+
+        private void databaseButton_Click(object sender, EventArgs e)
+        {
+            Form2 databaseAccess = new Form2();
+            databaseAccess.ShowDialog();
+        }
     }
 }
