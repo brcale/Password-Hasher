@@ -9,3 +9,10 @@ To use this program, user must create a notepad, and use notepad's path and put 
 and store/check passwords.
 
 
+![Password Hasher main window](https://user-images.githubusercontent.com/50056973/73614084-4af70800-45fc-11ea-9fc1-03d38b567299.jpg)
+
+
+![prozor za pristup bazi](https://user-images.githubusercontent.com/50056973/73614098-5a765100-45fc-11ea-9167-b00e8fb1ee66.jpg)
+
+
+![svi prozori](https://user-images.githubusercontent.com/50056973/73614103-6104c880-45fc-11ea-8e40-340652f6805a.png)
