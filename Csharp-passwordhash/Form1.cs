@@ -47,7 +47,7 @@ namespace Csharp_passwordhash
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
-
+            textBox1.UseSystemPasswordChar = !textBox1.UseSystemPasswordChar;
         }
         short numberOfEnteredPasswords = 0;
         private void button1_Click(object sender, EventArgs e)
